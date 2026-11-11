@@ -25,8 +25,8 @@ export const dashboardNavGroups: DashboardNavGroup[] = [
 				exact: true,
 			},
 			{
-				title: "Projects",
-				href: "/dashboard/projects",
+				title: "Overview",
+				href: "/dashboard/overview",
 				icon: LayoutGrid,
 			},
 		],

@@ -16,6 +16,15 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+After signing in, the sidebar links to these dashboard pages:
+
+- `/dashboard`: repositories.
+- `/dashboard/overview`: workspace statistics and recent repository activity.
+- `/dashboard/settings`: account settings.
+
+Chat history is loaded with `GET /api/chat/sessions/{id}`. Sending a message uses
+`POST /api/chat/sessions/{id}/messages` and receives a server-sent event stream.
+
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.

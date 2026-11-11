@@ -142,8 +142,7 @@ export const api: ApiClient = {
             method: "POST",
             body: JSON.stringify({ repositoryId, title }),
         }),
-    getMessages: (sessionId: string) =>
-        apiFetch<ChatMessage[]>(`/api/chat/sessions/${encodeURIComponent(sessionId)}/messages`),
+    getMessages: getChatMessages,
 }
 
 // Chat API
@@ -159,7 +158,7 @@ export async function createChatSession(repositoryId: string, title?: string) {
 }
 
 export async function getChatMessages(sessionId: string) {
-    return apiFetch<ChatMessage[]>(`/api/chat/sessions/${encodeURIComponent(sessionId)}/messages`);
+    return apiFetch<ChatMessage[]>(`/api/chat/sessions/${encodeURIComponent(sessionId)}`);
 }
 
 // Backwards-compatible exports used by client hooks
