@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" fill="none">
+  <defs>
+    <linearGradient id="editor" x1="180" y1="130" x2="1350" y2="850" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#172554"/>
+      <stop offset="1" stop-color="#0f172a"/>
+    </linearGradient>
+    <pattern id="grid" width="64" height="64" patternUnits="userSpaceOnUse">
+      <path d="M64 0H0V64" stroke="#818cf8" stroke-opacity=".18"/>
+    </pattern>
+  </defs>
+  <path fill="url(#grid)" d="M0 0h1600v1000H0z"/>
+  <g transform="rotate(-7 800 500)">
+    <rect x="200" y="160" width="1200" height="680" rx="24" fill="url(#editor)" stroke="#818cf8" stroke-opacity=".5" stroke-width="2"/>
+    <path d="M200 220H1400M390 220V840" stroke="#64748b" stroke-opacity=".4"/>
+    <circle cx="232" cy="190" r="7" fill="#fb7185"/>
+    <circle cx="256" cy="190" r="7" fill="#fbbf24"/>
+    <circle cx="280" cy="190" r="7" fill="#34d399"/>
+    <g font-family="monospace" font-size="17">
+      <text x="430" y="197" fill="#94a3b8">workspace / explore.ts</text>
+      <text x="230" y="270" fill="#c4b5fd">EXPLORER</text>
+      <text x="245" y="320" fill="#94a3b8">src</text>
+      <text x="260" y="360" fill="#7dd3fc">components</text>
+      <text x="260" y="400" fill="#94a3b8">services</text>
+      <text x="260" y="440" fill="#94a3b8">hooks</text>
+      <text x="260" y="480" fill="#6ee7b7">explore.ts</text>
+    </g>
+    <g font-family="monospace" font-size="24">
+      <text x="440" y="295" fill="#94a3b8">// Turn code into understanding</text>
+      <text x="440" y="350" fill="#c4b5fd">async function <tspan fill="#7dd3fc">exploreRepository</tspan><tspan fill="#e2e8f0">(repo) {</tspan></text>
+      <text x="480" y="405" fill="#c4b5fd">const <tspan fill="#e2e8f0">files = </tspan>await <tspan fill="#7dd3fc">repo.read</tspan><tspan fill="#e2e8f0">();</tspan></text>
+      <text x="480" y="460" fill="#c4b5fd">const <tspan fill="#e2e8f0">context = </tspan>await <tspan fill="#7dd3fc">index</tspan><tspan fill="#e2e8f0">(files);</tspan></text>
+      <text x="480" y="515" fill="#c4b5fd">return <tspan fill="#7dd3fc">chat</tspan><tspan fill="#e2e8f0">({</tspan></text>
+      <text x="520" y="570" fill="#e2e8f0">context,</text>
+      <text x="520" y="625" fill="#e2e8f0">question: <tspan fill="#6ee7b7">"How does this work?"</tspan></text>
+      <text x="480" y="680" fill="#e2e8f0">});</text>
+      <text x="440" y="735" fill="#e2e8f0">}</text>
+    </g>
+    <path d="M200 795H1400" stroke="#64748b" stroke-opacity=".4"/>
+    <text x="230" y="824" fill="#7dd3fc" font-family="monospace" font-size="16">main  /  TypeScript                                    CodeNexus workspace</text>
+  </g>
+  <g stroke="#38bdf8" stroke-opacity=".5" stroke-width="3">
+    <path d="m130 160-40 40 40 40m40-80 40 40-40 40M145 145l-20 110"/>
+    <path d="m1440 740-40 40 40 40m40-80 40 40-40 40"/>
+    <path d="M90 650h75l45 60h100M1320 90h70l50 60h100" stroke-dasharray="8 12"/>
+  </g>
+</svg>

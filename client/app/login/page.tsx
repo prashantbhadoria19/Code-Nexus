@@ -24,7 +24,7 @@ import { useCurrentUser, setAuthCookie } from "@/hooks/use-auth";
 
 function LoginLoading(){
     return(
-        <div className="flex min-h-svh items-center justify-center">
+        <div className="flex min-h-svh w-full items-center justify-center">
             <Spinner className="size-8"/>
         </div>
     )
@@ -82,8 +82,14 @@ const LoginContent = () => {
 
 
   return (
-        <div className="relative flex min-h-svh flex-col overflow-hidden bg-background">
-            <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_top,oklch(from_var(--primary)_l_c_h/0.08),transparent_55%)]" />
+        <div className="relative flex min-h-svh w-full flex-col overflow-hidden bg-background">
+            <div aria-hidden="true" className="pointer-events-none absolute inset-0 overflow-hidden">
+                <div className="absolute -left-24 top-[15%] size-80 rounded-full bg-primary/20 blur-3xl sm:left-[15%] sm:size-[28rem] dark:bg-primary/15" />
+                <div className="absolute -right-24 bottom-[10%] size-80 rounded-full bg-violet-400/20 blur-3xl sm:right-[10%] sm:size-[30rem] dark:bg-violet-500/15" />
+                <div className="absolute left-1/2 top-[10%] size-64 -translate-x-1/2 rounded-full bg-sky-300/20 blur-3xl dark:bg-sky-500/10" />
+                <div className="absolute -inset-6 bg-[url('/coding-background.svg')] bg-cover bg-center bg-no-repeat opacity-25 blur-[3px] sm:blur-[5px] dark:opacity-40" />
+                <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_20%,var(--background)_90%)]" />
+            </div>
 
             <header className="relative z-10 flex h-14 items-center justify-between px-4">
                 <BrandMark />
